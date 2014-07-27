@@ -1,0 +1,19 @@
+var http = require('http');
+var url = process.argv[2];
+
+
+http.get(url, function(response){
+	response.setEncoding('utf8');
+	response.on('data',  console.log);
+	response.on('error', console.error);
+});
+
+/*
+http.get(url, function(res){
+	var data = '';
+	res.on('data', function(chunk){
+		console.log(chunk.toString());
+	})
+}).on('error', function(chunk2){
+console.log('Got error: '+chunck2.toString());
+});*/
