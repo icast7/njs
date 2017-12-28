@@ -1,0 +1,10 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "promises",
+  "main": "index0004.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
